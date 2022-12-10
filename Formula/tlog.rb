@@ -5,23 +5,23 @@
 class Tlog < Formula
   desc "Simple CLI that helps log time on JIRA issues."
   homepage "https://github.com/fetinin/tlog"
-  version "0.0.6"
+  version "0.0.7"
   license "MIT"
 
   depends_on "go" => :optional
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/fetinin/tlog/releases/download/v0.0.6/tlog_0.0.6_Darwin_arm64.tar.gz"
-      sha256 "dffbba678d40b95ae1a13a46c05c4c792aca9533b69b62e4d281c0c30afe5bbe"
+      url "https://github.com/fetinin/tlog/releases/download/v0.0.7/tlog_0.0.7_Darwin_arm64.tar.gz"
+      sha256 "2f9985da9b8ec5e60702d2d4e6c330cbf247df228c9f14ed543a0caa09860fbf"
 
       def install
         bin.install "tlog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fetinin/tlog/releases/download/v0.0.6/tlog_0.0.6_Darwin_x86_64.tar.gz"
-      sha256 "7cd8654ff9af278077cbe3b1ee8a1f055e4a817af20e2884007474bf71c9a299"
+      url "https://github.com/fetinin/tlog/releases/download/v0.0.7/tlog_0.0.7_Darwin_x86_64.tar.gz"
+      sha256 "76bd6880418017d8864e35be18b9556681922294578de105c19fe0e7cee4e175"
 
       def install
         bin.install "tlog"
@@ -31,16 +31,16 @@ class Tlog < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fetinin/tlog/releases/download/v0.0.6/tlog_0.0.6_Linux_arm64.tar.gz"
-      sha256 "7d8409584385ee337524ec0c47c1c8d5b43a4de2b96af1bc5013b509ba8a0c52"
+      url "https://github.com/fetinin/tlog/releases/download/v0.0.7/tlog_0.0.7_Linux_arm64.tar.gz"
+      sha256 "0458155222085f02487411e1b48f8f9fca4793d84ad108241a0507932e924e7e"
 
       def install
         bin.install "tlog"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/fetinin/tlog/releases/download/v0.0.6/tlog_0.0.6_Linux_x86_64.tar.gz"
-      sha256 "fa83782cb845fb546d7ed36aecac07f6f49c9407b99f5acf174cf5f844587ef9"
+      url "https://github.com/fetinin/tlog/releases/download/v0.0.7/tlog_0.0.7_Linux_x86_64.tar.gz"
+      sha256 "80c3830728a03e6aab879e6e1ec2770a7ce34a13d34890690c5c60f218726867"
 
       def install
         bin.install "tlog"
